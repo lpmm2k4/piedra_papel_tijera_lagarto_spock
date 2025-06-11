@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Juego Piedra Papel Tijera Lagarto Spock</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Piedra, Papel, Tijera, Lagarto o Spock</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="contenedor">
-    <label for="idioma">🌐 Elige idioma: </label>
-    <select id="idioma" onchange="actualizarIdioma()">
-      <option value="es">Español</option>
-      <option value="en">English</option>
-      <option value="fr">Français</option>
-    </select>
-
-    <h1 id="titulo">Mi Juego</h1>
-
+    <h1>Piedra, Papel, Tijera, Lagarto o Spock</h1>
+    <p>Elige una opción:</p>
     <div class="botones">
-      <button onclick="jugar('piedra')">🪨 Piedra</button>
-      <button onclick="jugar('papel')">📄 Papel</button>
-      <button onclick="jugar('tijera')">✂️ Tijera</button>
-      <button onclick="jugar('lagarto')">🦎 Lagarto</button>
-      <button onclick="jugar('spock')">🖖 Spock</button>
+      <button onclick="jugar('🪨')">🪨 Piedra</button>
+      <button onclick="jugar('📄')">📄 Papel</button>
+      <button onclick="jugar('✂️')">✂️ Tijeras</button>
+      <button onclick="jugar('🦎')">🦎 Lagarto</button>
+      <button onclick="jugar('🖖')">🖖 Spock</button>
     </div>
-
     <div id="resultado" class="resultado"></div>
+    <div class="reglas">
+      <h2>Reglas</h2>
+      <ul>
+        <li>✂️ cortan 📄</li>
+        <li>📄 cubre 🪨</li>
+        <li>🪨 aplasta 🦎</li>
+        <li>🦎 envenena 🖖</li>
+        <li>🖖 desintegra ✂️</li>
+        <li>✂️ decapita 🦎</li>
+        <li>🦎 come 📄</li>
+        <li>📄 refuta 🖖</li>
+        <li>🖖 rompe 🪨</li>
+        <li>🪨 aplasta ✂️</li>
+      </ul>
+    </div>
   </div>
-
   <script src="juego.js"></script>
 </body>
 </html>
-
