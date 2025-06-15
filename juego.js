@@ -9,7 +9,7 @@ function jugar(eleccionJugador) {
     },
     papel: {
       piedra: "Papel cubre piedra",
-      spock: "Papel refuta a Spock"
+      spock: "Papel desautoriza a Spock"
     },
     tijera: {
       papel: "Tijeras cortan papel",
@@ -26,8 +26,9 @@ function jugar(eleccionJugador) {
   };
 
   let mensaje = `
-  <div class="jugador">👤 Tú elegiste: ${emoji(eleccionJugador)}</div>
-  <div class="computadora">💻 La computadora eligió: ${emoji(computadora)}</div>
+<div class="jugador"><span class="emoji">👤</span> Tú elegiste: <span class="emoji">${emoji(eleccionJugador)}</span></div>
+<div class="computadora"><span class="emoji">💻</span> La computadora eligió: <span class="emoji">${emoji(computadora)}</span></div>
+
 `;
 
 if (eleccionJugador === computadora) {
