@@ -2,36 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Piedra, Papel, Tijera, Lagarto o Spock</title>
+  <title>Piedra, Papel, Tijera, Lagarto, Spock</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="contenedor">
     <h1>Piedra, Papel, Tijera, Lagarto o Spock</h1>
-    <p>Elige una opción:</p>
+    <p>Elige tu jugada:</p>
     <div class="botones">
-      <button onclick="jugar('🪨')">🪨 Piedra</button>
-      <button onclick="jugar('📄')">📄 Papel</button>
-      <button onclick="jugar('✂️')">✂️ Tijeras</button>
-      <button onclick="jugar('🦎')">🦎 Lagarto</button>
-      <button onclick="jugar('🖖')">🖖 Spock</button>
+      <button onclick="jugar('piedra')">🪨 Piedra</button>
+      <button onclick="jugar('papel')">📄 Papel</button>
+      <button onclick="jugar('tijera')">✂️ Tijera</button>
+      <button onclick="jugar('lagarto')">🦎 Lagarto</button>
+      <button onclick="jugar('spock')">🖖 Spock</button>
     </div>
-    <div id="resultado" class="resultado"></div>
-    <div class="reglas">
-      <h2>Reglas</h2>
-      <ul>
-        <li>✂️ cortan 📄</li>
-        <li>📄 cubre 🪨</li>
-        <li>🪨 aplasta 🦎</li>
-        <li>🦎 envenena 🖖</li>
-        <li>🖖 desintegra ✂️</li>
-        <li>✂️ decapita 🦎</li>
-        <li>🦎 come 📄</li>
-        <li>📄 refuta 🖖</li>
-        <li>🖖 rompe 🪨</li>
-        <li>🪨 aplasta ✂️</li>
-      </ul>
-    </div>
+    <div id="resultado"></div>
   </div>
   <script src="juego.js"></script>
 </body>
